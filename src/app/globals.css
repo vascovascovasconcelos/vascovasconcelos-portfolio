@@ -1,0 +1,196 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Brand palette from Figma "Portfólio Vasco" */
+  --color-ink: #121212;
+  --color-ink-soft: #606060;
+  --color-muted: #bbbbbb;
+  --color-accent: #eeff00;
+  --color-paper: #ffffff;
+
+  --font-sans: var(--font-rubik), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-special-gothic), var(--font-rubik), sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Horizontal scroll without a visible scrollbar */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Scroll-position-aware edge fades for the card carousel (lg only). Fade widths
+   are driven by --fade-l / --fade-r, set from JS based on scroll position. */
+@media (min-width: 1024px) {
+  .carousel-fade {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      #000 var(--fade-l, 0px),
+      #000 calc(100% - var(--fade-r, 0px)),
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0,
+      #000 var(--fade-l, 0px),
+      #000 calc(100% - var(--fade-r, 0px)),
+      transparent 100%
+    );
+  }
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ---------- Accent blobs: autonomous, gentle drift + colour cycling ---------- */
+
+.blob-core {
+  width: clamp(220px, 28vw, 360px);
+  aspect-ratio: 1;
+  border-radius: 9999px;
+  filter: blur(100px);
+}
+
+/* Entrance: intro slides down from above, about rises up from below */
+@keyframes blob-enter-top {
+  from {
+    transform: translateY(-130vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes blob-enter-bottom {
+  from {
+    transform: translateY(130vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Continuous gentle drift */
+@keyframes blob-drift-a {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-28px, 26px) scale(1.06);
+  }
+}
+@keyframes blob-drift-b {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(26px, -24px) scale(1.05);
+  }
+}
+
+/* Continuous colour cycling through the brand palette */
+@keyframes blob-hue-warm {
+  0% {
+    background-color: #eeff00;
+  }
+  30% {
+    background-color: #7dffb0;
+  }
+  60% {
+    background-color: #7dc0ff;
+  }
+  80% {
+    background-color: #ff7dd1;
+  }
+  100% {
+    background-color: #eeff00;
+  }
+}
+@keyframes blob-hue-cool {
+  0% {
+    background-color: #ff80bd;
+  }
+  30% {
+    background-color: #ff7dd1;
+  }
+  60% {
+    background-color: #7dc0ff;
+  }
+  80% {
+    background-color: #eeff00;
+  }
+  100% {
+    background-color: #ff80bd;
+  }
+}
+@keyframes blob-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: var(--blob-opacity, 1);
+  }
+}
+
+.blob-pos-intro {
+  position: absolute;
+  top: 2vh;
+  right: 4vw;
+  animation: blob-enter-top 1.2s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.blob-pos-about {
+  position: absolute;
+  top: 44vh;
+  right: 2vw;
+  animation: blob-enter-bottom 1.3s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+.blob-pos-works {
+  position: absolute;
+  top: 26vh;
+  right: 3vw;
+  opacity: 0.4;
+  animation: blob-fade-in 1s ease both;
+  --blob-opacity: 0.4;
+}
+
+.blob-drift-a {
+  animation: blob-drift-a 11s ease-in-out infinite;
+}
+.blob-drift-b {
+  animation: blob-drift-b 13s ease-in-out infinite;
+}
+
+.blob-cycle-warm {
+  background-color: #eeff00; /* fallback when animation is disabled */
+  animation: blob-hue-warm 22s ease-in-out infinite;
+}
+.blob-cycle-cool {
+  background-color: #ff80bd; /* fallback when animation is disabled */
+  animation: blob-hue-cool 24s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blob-pos-intro,
+  .blob-pos-about,
+  .blob-pos-works,
+  .blob-drift-a,
+  .blob-drift-b,
+  .blob-cycle-warm,
+  .blob-cycle-cool {
+    animation: none;
+  }
+}

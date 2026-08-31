@@ -6,7 +6,9 @@ export default function IntroSection() {
     >
       <div className="flex max-w-[652px] flex-col gap-8">
         <h1 className="font-light leading-[1.06] tracking-[-0.04em] text-ink text-[clamp(40px,6.4vw,72px)]">
-          i&apos;m Vasco, a designer from São Paulo, Brasil
+          i&apos;m Vasco,
+          <br />a designer from
+          <br />São Paulo, Brasil
         </h1>
         <p className="max-w-[481px] leading-[1.3] tracking-[-0.04em] text-ink-soft text-[clamp(18px,2.4vw,24px)]">
           i&apos;m passionate about craft and making things. right now, i&apos;m

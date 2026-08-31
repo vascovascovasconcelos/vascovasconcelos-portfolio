@@ -8,8 +8,8 @@
   --color-accent: #eeff00;
   --color-paper: #ffffff;
 
-  --font-sans: var(--font-rubik), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-special-gothic), var(--font-rubik), sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
 
 html,

@@ -11,7 +11,7 @@ export const WORKS: Work[] = [
   { title: "ge's Vai e Vem do Mercado", href: "/work/vai-e-vem-do-mercado" },
   { title: "Pix Payment Journey @ iti/Itaú", href: "/work/iti" },
   { title: "ge's Matchday Center" },
-  { title: "DALE's 2026 World Cup Office Pool" },
+  { title: "DALE's 2026 World Cup Office Pool", href: "/work/dale" },
   { title: "Premiere App", href: "/work/premiere" },
   { title: "Nexo's Design System" },
   { title: "25 Years of Gueto", href: "/work/gueto" },

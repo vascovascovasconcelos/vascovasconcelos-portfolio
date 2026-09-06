@@ -4,6 +4,7 @@ import ProjectSideMenu from "@/components/ProjectSideMenu";
 import ProjectMobileHeader from "@/components/ProjectMobileHeader";
 import ProjectMobileFab from "@/components/ProjectMobileFab";
 import ProjectFab from "@/components/ProjectFab";
+import ProjectLightbox from "@/components/project/ProjectLightbox";
 import MobileLinks from "@/components/MobileLinks";
 
 type Credit = { label: string; value: string };
@@ -55,7 +56,10 @@ export default function ProjectLayout({
         {/* Content clears the fixed menu (min 394px left) but centers on wide
             viewports instead of staying pinned to the left. */}
         <div className="px-6 py-10 sm:px-10 lg:pb-24 lg:pl-[max(394px,calc((100vw-870px)/2))] lg:pr-12 lg:pt-12">
-          <article className="flex flex-col items-start gap-12 lg:max-w-[870px]">
+          <article
+            data-gallery
+            className="flex flex-col items-start gap-12 lg:max-w-[870px]"
+          >
             {/* Title + credits. On lg the credits are pulled out of flow
                 (absolute) so the taller credits column doesn't stretch the
                 title block or push the body down. */}
@@ -94,6 +98,8 @@ export default function ProjectLayout({
         {/* Mobile footer — contact links live only here */}
         <MobileLinks variant="footer" />
       </main>
+
+      <ProjectLightbox />
     </>
   );
 }

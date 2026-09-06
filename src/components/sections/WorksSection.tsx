@@ -12,10 +12,10 @@ export default function WorksSection() {
   return (
     <section
       id="selected-works"
-      className="flex h-dvh snap-start snap-always flex-col px-8 pb-[132px] pt-[144px] sm:px-10 lg:px-0 lg:py-[52px] lg:pl-[394px] lg:pr-12"
+      className="flex h-dvh snap-start snap-always flex-col px-8 pb-[132px] pt-[184px] sm:px-10 lg:px-0 lg:py-[52px] lg:pl-[394px] lg:pr-12"
     >
       <h2 className="sr-only">Selected works</h2>
-      <ol className="works-list no-scrollbar flex flex-1 flex-col justify-between gap-y-2 overflow-y-auto lg:max-w-[893px]">
+      <ol className="works-list no-scrollbar flex flex-1 flex-col gap-9 overflow-y-auto lg:justify-center lg:gap-[56px] lg:max-w-[893px]">
         {works.map((work, i) => (
           <li key={work.title}>
             <a

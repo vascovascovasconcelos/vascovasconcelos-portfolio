@@ -55,6 +55,32 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+/* ---------- Selected works list: hover marks the row, dims the rest ---------- */
+.works-list .work-row {
+  color: var(--color-ink);
+  transition: color 0.25s ease;
+}
+.works-list .work-title {
+  transition: background-color 0.2s ease;
+}
+/* When the list is hovered, every row dims... */
+.works-list:hover .work-row {
+  color: var(--color-muted);
+}
+/* ...except the one actually under the pointer, which stays ink + gets marked. */
+.works-list:hover .work-row:hover {
+  color: var(--color-ink);
+}
+.works-list:hover .work-row:hover .work-title {
+  background-color: var(--color-accent);
+}
+@media (prefers-reduced-motion: reduce) {
+  .works-list .work-row,
+  .works-list .work-title {
+    transition: none;
+  }
+}
+
 /* ---------- Accent blobs: autonomous, gentle drift + colour cycling ---------- */
 
 .blob-core {
@@ -62,6 +88,7 @@ body {
   aspect-ratio: 1;
   border-radius: 9999px;
   filter: blur(100px);
+  background-color: var(--color-accent);
 }
 
 /* Entrance: intro slides down from above, about rises up from below */
@@ -102,41 +129,6 @@ body {
   }
 }
 
-/* Continuous colour cycling through the brand palette */
-@keyframes blob-hue-warm {
-  0% {
-    background-color: #eeff00;
-  }
-  30% {
-    background-color: #7dffb0;
-  }
-  60% {
-    background-color: #7dc0ff;
-  }
-  80% {
-    background-color: #ff7dd1;
-  }
-  100% {
-    background-color: #eeff00;
-  }
-}
-@keyframes blob-hue-cool {
-  0% {
-    background-color: #ff80bd;
-  }
-  30% {
-    background-color: #ff7dd1;
-  }
-  60% {
-    background-color: #7dc0ff;
-  }
-  80% {
-    background-color: #eeff00;
-  }
-  100% {
-    background-color: #ff80bd;
-  }
-}
 @keyframes blob-fade-in {
   from {
     opacity: 0;
@@ -174,23 +166,12 @@ body {
   animation: blob-drift-b 13s ease-in-out infinite;
 }
 
-.blob-cycle-warm {
-  background-color: #eeff00; /* fallback when animation is disabled */
-  animation: blob-hue-warm 22s ease-in-out infinite;
-}
-.blob-cycle-cool {
-  background-color: #ff80bd; /* fallback when animation is disabled */
-  animation: blob-hue-cool 24s ease-in-out infinite;
-}
-
 @media (prefers-reduced-motion: reduce) {
   .blob-pos-intro,
   .blob-pos-about,
   .blob-pos-works,
   .blob-drift-a,
-  .blob-drift-b,
-  .blob-cycle-warm,
-  .blob-cycle-cool {
+  .blob-drift-b {
     animation: none;
   }
 }

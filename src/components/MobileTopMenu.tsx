@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import { SECTIONS, DOT_STOPS } from "@/lib/home";
+import { SECTIONS } from "@/lib/home";
 
 // Mobile top bar: logo + pill nav (intro / selected works / about me) with a
 // blurred colour dot sitting behind the active item — the mobile counterpart of
@@ -45,10 +45,9 @@ export default function MobileTopMenu({
       <div className="relative flex items-center gap-4 rounded-full bg-black/10 px-4 py-3 text-[18px] tracking-[-0.04em] text-ink backdrop-blur-[7px]">
         <span
           aria-hidden="true"
-          className="pointer-events-none absolute top-1/2 size-7 -translate-x-1/2 -translate-y-1/2 rounded-full blur-[4px] transition-all duration-500 ease-out"
+          className="pointer-events-none absolute top-1/2 size-7 -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent blur-[4px] transition-all duration-500 ease-out"
           style={{
             left: dotLeft ?? 20,
-            backgroundColor: DOT_STOPS[activeIndex]?.color ?? DOT_STOPS[0].color,
             opacity: dotLeft === null ? 0 : 0.5,
           }}
         />

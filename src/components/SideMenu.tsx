@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import ArrowOutward from "./ArrowOutward";
-import { SECTIONS, DOT_STOPS } from "@/lib/home";
+import { SECTIONS } from "@/lib/home";
 
 const LINKS = [
   {
@@ -44,13 +44,12 @@ export default function SideMenu({
       aria-label="Primary"
       className="fixed inset-y-0 left-0 z-20 hidden flex-col justify-between py-16 pl-[52px] pr-[51px] lg:flex"
     >
-      {/* Scroll-position dot: centred on the active item, colour per section */}
+      {/* Scroll-position dot: centred on the active item, fixed accent colour */}
       <span
         aria-hidden="true"
-        className="absolute left-[24px] size-3 rounded-full blur-[4px] transition-all duration-500 ease-out"
+        className="absolute left-[24px] size-3 rounded-full bg-accent blur-[4px] transition-all duration-500 ease-out"
         style={{
           top: dotTop ?? 0,
-          backgroundColor: DOT_STOPS[activeIndex]?.color ?? DOT_STOPS[0].color,
           opacity: dotTop === null ? 0 : 1,
         }}
       />

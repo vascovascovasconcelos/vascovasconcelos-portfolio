@@ -1,52 +1,18 @@
-export type Project = {
+export type Work = {
   title: string;
-  label: string; // small overline shown on hover, e.g. "ge.globo"
-  description: string;
-  image: string;
-  href: string;
+  // Case-study route. Omitted for projects that don't have a page yet — those
+  // rows render as plain (non-navigating) items in the list.
+  href?: string;
 };
 
-// Selected works. Replace placeholders with real case studies + thumbnails
-// (drop images in /public/projects).
-export const PROJECTS: Project[] = [
-  {
-    title: "Vai e Vem do Mercado",
-    label: "ge.globo",
-    description:
-      "An experience for the football transfer market that became a reference through Globo's digital publishing ecosystem.",
-    image: "/projects/vai-e-vem-thumb.png",
-    href: "/work/vai-e-vem-do-mercado",
-  },
-  {
-    title: "Premiere",
-    label: "globo",
-    description:
-      "App's journey evolution, accessibility culture and product growth for Globo's football streaming.",
-    image: "/projects/premiere/thumb.png",
-    href: "/work/premiere",
-  },
-  {
-    title: "25 Years of Gueto",
-    label: "gueto, graffiti artist",
-    description:
-      "Celebrating the artist's milestone connecting his art to football.",
-    image: "/projects/gueto/thumb.png",
-    href: "/work/gueto",
-  },
-  {
-    title: "Pix Payment Journey",
-    label: "iti/Itaú",
-    description:
-      "The first financial institution to launch Pix, with a whole new payments' journey.",
-    image: "/projects/iti/thumb.png",
-    href: "/work/iti",
-  },
-  {
-    title: "New experience vision for ge App",
-    label: "ge.globo",
-    description:
-      "A new product vision for ge App, built by design and through design.",
-    image: "/projects/ge/mockup-1.png",
-    href: "/work/ge",
-  },
+// Selected works, in display order. Numbered list on the home page.
+export const WORKS: Work[] = [
+  { title: "New Product Vision for ge App", href: "/work/ge" },
+  { title: "ge's Vai e Vem do Mercado", href: "/work/vai-e-vem-do-mercado" },
+  { title: "Pix Payment Journey @ iti/Itaú", href: "/work/iti" },
+  { title: "ge's Matchday Center" },
+  { title: "DALE's 2026 World Cup Office Pool" },
+  { title: "Premiere App", href: "/work/premiere" },
+  { title: "Nexo's Design System" },
+  { title: "25 Years of Gueto", href: "/work/gueto" },
 ];

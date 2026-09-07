@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import ProjectLayout from "@/components/project/ProjectLayout";
-import { P, CaptionedMockup } from "@/components/project/prose";
+import { P, Mark, CaptionedMockup } from "@/components/project/prose";
 import MediaCarousel, { type MediaItem } from "@/components/MediaCarousel";
 
 const TITLE = "25 Years of Gueto";
@@ -67,13 +67,17 @@ export default function GuetoCaseStudy() {
       />
 
       <P>
-        In 2023, to celebrate 25 years of graffiti worldwide, Gueto decided to
-        bring to life his childhood dream: a football shirt.
+        In 2023, to celebrate 25 years of graffiti worldwide,{" "}
+        <Mark>
+          Gueto decided to bring to life his childhood dream: a football shirt.
+        </Mark>
       </P>
       <P>
-        In this journey, I work with Gueto to design the limited edition jersey,
-        souvenirs and print materials to tell his story in art and to remember
-        his trajectory.
+        In this journey, I work with Gueto to{" "}
+        <Mark>
+          design the limited edition jersey, souvenirs and print materials to
+          tell his story in art and to remember his trajectory.
+        </Mark>
       </P>
 
       <MediaCarousel items={PHOTOS} alt="Gueto anniversary drop photo" />

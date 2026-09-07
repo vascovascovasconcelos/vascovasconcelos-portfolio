@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import ProjectLayout from "@/components/project/ProjectLayout";
-import { P, Stats } from "@/components/project/prose";
+import { P, Mark, Stats } from "@/components/project/prose";
 import MediaCarousel, { type MediaItem } from "@/components/MediaCarousel";
+
+const linkClass =
+  "text-ink underline decoration-from-font underline-offset-2 transition-opacity hover:opacity-60";
 
 const TITLE = "DALE's 2026 World Cup Office Pool";
 
@@ -50,20 +53,22 @@ export default function DaleCaseStudy() {
       coverAlt="DALE's 2026 World Cup Office Pool"
     >
       <P>
-        Nothing compares to football&apos;s World Cup global impact: it engages 5
-        billion fans and has almost 1.5 billion viewers on a single match (FIFA,
-        2022) – for instance, Super Bowl, most successful American sports event,
-        reaches an average of 125 million viewers.
+        <Mark>Nothing compares to football&apos;s World Cup global impact</Mark>:
+        it engages 5 billion fans and has almost 1.5 billion viewers on a single
+        match (FIFA, 2022) – for instance, Super Bowl, most successful American
+        sports event, reaches an average of 125 million viewers.
       </P>
       <P>
         In Brazil, 5 times World Cup&apos;s champions and a country where
         football is seen as a religion, the event is omnipresent in our daily
         life: street walls and sidewalks painted, flags and adornments hanging,
         family and friends gathering to watch games and creating sweepstakes to
-        have fun. Also, World Cup has huge effects on the corporate journey:
-        coworkers watching matches together, we have time off when Brazil&apos;s
-        national team plays and some office pools are organised between the
-        employees.
+        have fun. Also, World Cup has huge effects on the corporate journey:{" "}
+        <Mark>
+          coworkers watching matches together, we have time off when
+          Brazil&apos;s national team plays and some office pools are organised
+          between the employees.
+        </Mark>
       </P>
 
       <MediaCarousel items={SHOTS} alt="DALE Bolão platform screen" />
@@ -71,9 +76,12 @@ export default function DaleCaseStudy() {
       <P>
         In this context, DALE, an awarded and successful corporate communication
         agency, brought together the Brazilian passion for football and a
-        well-established habit to the corporate journey, creating an office pool
-        platform for companies, engaging employees with data security and using
-        the event as another touchpoint for internal communication.
+        well-established habit to the corporate journey,{" "}
+        <Mark>
+          creating an office pool platform for companies, engaging employees with
+          data security and using the event as another touchpoint for internal
+          communication.
+        </Mark>
       </P>
       <P>
         As a die-hard football fan, I was happy to be the designer responsible
@@ -88,9 +96,13 @@ export default function DaleCaseStudy() {
       <MediaCarousel items={WIDE} alt="DALE Bolão platform cards" />
 
       <P>
-        For the design system, it was crucial the platform was flexible enough
-        for different colour palettes beyond the default identity, so the
-        foundations were created to scale through six themes.
+        For the design system,{" "}
+        <Mark>
+          it was crucial the platform was flexible enough for different colour
+          palettes beyond the default identity
+        </Mark>, so the foundations were created to scale through six themes.
+        Also, the experience was compliant with WCAG guidelines about colour
+        contrast, screen reading and assistive controls.
       </P>
       <P>
         In the experience, the primary goal was to highlight the upcoming matches
@@ -103,8 +115,17 @@ export default function DaleCaseStudy() {
       <Stats items={STATS} />
 
       <P>
-        This project was developed for DALE with my amazing and talented former
-        coworkers Marcelo Rouco and Fatima Petronieri.
+        This project was developed for{" "}
+        <a
+          href="https://dale.ag/"
+          target="_blank"
+          rel="noreferrer"
+          className={linkClass}
+        >
+          DALE
+        </a>{" "}
+        with my amazing and talented former coworkers Marcelo Rouco and Fatima
+        Petronieri.
       </P>
     </ProjectLayout>
   );

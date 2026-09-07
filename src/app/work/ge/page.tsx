@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import ProjectLayout from "@/components/project/ProjectLayout";
-import { P, CaptionedMockup } from "@/components/project/prose";
+import { P, Mark, CaptionedMockup } from "@/components/project/prose";
 import MediaCarousel, { type MediaItem } from "@/components/MediaCarousel";
 
 const TITLE = "New experience vision for ge App";
@@ -59,16 +59,22 @@ export default function GeCaseStudy() {
       />
 
       <P>
-        In the end of 2024, ge, Globo&apos;s digital product, began to reevaluate
-        its strategy in app platform, to bring value to its native experience and
-        to differentiate itself from competitors and from the website, which
-        leads with a broad margin in Brazil.
+        In the end of 2024,{" "}
+        <Mark>
+          ge, Globo&apos;s digital product, began to reevaluate its strategy in
+          app platform
+        </Mark>, to bring value to its native experience and to differentiate
+        itself from competitors and from the website, which leads with a broad
+        margin in Brazil.
       </P>
       <P>
         The digital consumption and user habits have change, so ge was facing
-        some challenges: users expect a customized experience, traditional news
-        formats declines in indicators and new players arrived in sports category
-        and the experience turned to be a differential.
+        some challenges:{" "}
+        <Mark>
+          users expect a customized experience, traditional news formats declines
+          in indicators and new players arrived in sports category and the
+          experience turned to be a differential.
+        </Mark>
       </P>
 
       <MediaCarousel items={CAROUSEL_1} alt="ge App concept screen" />
@@ -80,39 +86,46 @@ export default function GeCaseStudy() {
 
       <ul className="max-w-[650px] list-disc space-y-2 pl-5 leading-[1.45] tracking-[-0.04em] text-ink-soft text-[18px]">
         <li>
-          an ever-new experience, where the content are dynamic, relevant, plural
-          and always fresh
+          <Mark>an ever-new experience</Mark>, where the content are dynamic,
+          relevant, plural and always fresh
         </li>
         <li>
-          ge app always with you: a companion experience that shapeshifts and
-          responds to the user journey
+          <Mark>ge app always with you:</Mark> a companion experience that
+          shapeshifts and responds to the user journey
         </li>
         <li>
-          sport is playful: the content should call you to interact, talk and
-          have fun
+          <Mark>sport is playful:</Mark> the content should call you to interact,
+          talk and have fun
         </li>
         <li>
-          advertising beyond the banner: contextual monetization integrated to
-          the sports journey
+          <Mark>advertising beyond the banner:</Mark> contextual monetization
+          integrated to the sports journey
         </li>
         <li>
-          an app for everyone: interactive, emotional and dynamic for each and
-          every fan; for each every club
+          <Mark>an app for everyone:</Mark> interactive, emotional and dynamic
+          for each and every fan; for each every club
         </li>
       </ul>
 
       <MediaCarousel items={CAROUSEL_2} alt="ge App concept screen" />
 
       <P>
-        We validated the concept nationwide, travelling through the five regions
-        of Brazil and talking with our users in 12 cities spread in 11 states.
+        <Mark>
+          We validated the concept nationwide, travelling through the five
+          regions of Brazil
+        </Mark>{" "}
+        and talking with our users in 12 cities spread in 11 states.
       </P>
       <P>
         This project experimented about gamification in user&apos;s profile
         construction, flexible and imagetic language, structured content and
-        emotional experiences. It&apos;s still a work in progress and it&apos;s
-        already earning results: ge app have a new and imagetic feed for football
-        clubs, new content formats and an updated services&apos; verticals such
+        emotional experiences.{" "}
+        <Mark>
+          It&apos;s still a work in progress and it&apos;s already earning
+          results:
+        </Mark>{" "}
+        ge app have a new and imagetic feed for football clubs, new content
+        formats and an updated services&apos; verticals such
         as tournament tables and matches calendar. Also, this concept are
         bringing ge&apos;s branding closer to its users, with customized icons
         and splashscreens.
@@ -122,9 +135,10 @@ export default function GeCaseStudy() {
 
       <P>
         Credits to the amazing team of designers that work besides me: Ana
-        Vitória Leite and Luiza Nunes Teich. Also, a special thanks to
-        Globo&apos;s UX leadership that worked close with us: Leando Geijfinbein
-        (UX director) and Rodrigo Santos (UX manager).
+        Vitória Leite, Leoneia Evangelista, Luciana Daltro and Luiza Nunes Teich.
+        Also, a special thanks to Globo&apos;s UX leadership that worked close
+        with us: Leando Geijfinbein (UX director) and Rodrigo Santos (UX
+        manager).
       </P>
 
       <p className="text-[18px] tracking-[-0.04em] text-ink-soft">

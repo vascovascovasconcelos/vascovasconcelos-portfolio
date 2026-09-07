@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import CardCarousel from "@/components/CardCarousel";
 import ProjectLayout from "@/components/project/ProjectLayout";
-import { P, CaptionedMockup } from "@/components/project/prose";
+import { P, Mark, CaptionedMockup } from "@/components/project/prose";
 
 const TITLE = "Pix Payment Journey";
 
@@ -52,9 +52,12 @@ export default function ItiCaseStudy() {
       <CardCarousel cards={OLD_JOURNEY} alt="iti's previous payment journey" />
 
       <P>
-        We had a more fluid and flexible payment journey, that merges the
-        previous default forms as DOC/TED and bank payment slip with the new
-        tokens as mobile phone number, security number, e-mail and random key.
+        We had a{" "}
+        <Mark>
+          more fluid and flexible payment journey, that merges the previous
+          default forms as DOC/TED and bank payment slip with the new tokens
+        </Mark>{" "}
+        as mobile phone number, security number, e-mail and random key.
       </P>
       <P>
         After user interviews and usability tests among business and branding
@@ -68,14 +71,18 @@ export default function ItiCaseStudy() {
           more defined content and task groups
         </li>
         <li>
-          we remark the interface with the new iti&apos;s proprietary visual
-          identity (using the pink palette), highlighting the iticon avatar to
-          bring a friendly touch to the journey
+          we remark the interface with the{" "}
+          <Mark>
+            new iti&apos;s proprietary visual identity (using the pink palette),
+            highlighting the iticon avatar
+          </Mark>{" "}
+          to bring a friendly touch to the journey
         </li>
         <li>
-          we added send message feature to all users, antecipating a side social
-          feature for the transaction – before Pix feature, messages were only
-          allowed between iti&apos;s accounts
+          we added send message feature to all users,{" "}
+          <Mark>antecipating a side social feature for the transaction</Mark> –
+          before Pix feature, messages were only allowed between iti&apos;s
+          accounts
         </li>
       </ul>
 
@@ -89,10 +96,12 @@ export default function ItiCaseStudy() {
       />
 
       <P>
-        iti was the first financial institution to rollout Pix feature the its
-        whole userbase, 5 days before it was available to the entire banking
-        system. Also, 6 months after Pix launch, the app doubled its client base
-        (from 3MM to 6MM users).
+        <Mark>
+          iti was the first financial institution to rollout Pix feature the its
+          whole userbase, 5 days before it was available to the entire banking
+          system
+        </Mark>. Also, 6 months after Pix launch, the app doubled its client
+        base (from 3MM to 6MM users).
       </P>
 
       <p className="text-[16px] tracking-[-0.04em] text-ink-soft">

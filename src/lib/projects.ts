@@ -9,8 +9,8 @@ export type Work = {
 export const WORKS: Work[] = [
   { title: "New Product Vision for ge App", href: "/work/ge" },
   { title: "ge's Vai e Vem do Mercado", href: "/work/vai-e-vem-do-mercado" },
+  { title: "ge's Matchday Center", href: "/work/ge-matchday" },
   { title: "Pix Payment Journey @ iti/Itaú", href: "/work/iti" },
-  { title: "ge's Matchday Center" },
   { title: "DALE's 2026 World Cup Office Pool", href: "/work/dale" },
   { title: "Premiere App", href: "/work/premiere" },
   { title: "Nexo's Design System" },

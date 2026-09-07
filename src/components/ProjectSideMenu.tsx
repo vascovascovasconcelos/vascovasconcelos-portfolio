@@ -12,7 +12,7 @@ const LINKS = [
     href: "mailto:hello@vascovasconcelos.com",
   },
   {
-    label: "linkedin",
+    label: "LinkedIn",
     href: "https://www.linkedin.com/in/thiagovascovasconcelos/",
   },
 ];

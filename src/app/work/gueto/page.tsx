@@ -73,7 +73,7 @@ export default function GuetoCaseStudy() {
         </Mark>
       </P>
       <P>
-        In this journey, I work with Gueto to{" "}
+        I worked with Gueto to{" "}
         <Mark>
           design the limited edition jersey, souvenirs and print materials to
           tell his story in art and to remember his trajectory.
@@ -87,14 +87,14 @@ export default function GuetoCaseStudy() {
         by Gueto, the typography, the package, the flag and the print materials.
       </P>
       <P>
-        The editorial photos took place in Vila Belmiro, a football&apos;s temple
-        and Santos FC stadium – club that I share the support with Gueto.
+        The editorial photos took place in Vila Belmiro, a temple of football and
+        Santos FC&apos;s stadium — a club whose support I share with Gueto.
       </P>
 
       <MediaCarousel items={REEL} alt="Gueto editorial reel" />
 
       <p className="mt-4 text-[18px] tracking-[-0.04em] text-ink-soft">
-        Check Gueto&apos;s art in his{" "}
+        Check out Gueto&apos;s art on his{" "}
         <a
           href="https://www.instagram.com/gueto1/"
           target="_blank"
@@ -103,7 +103,7 @@ export default function GuetoCaseStudy() {
         >
           Instagram
         </a>{" "}
-        and his{" "}
+        and{" "}
         <a
           href="https://www.gueto1.com/"
           target="_blank"

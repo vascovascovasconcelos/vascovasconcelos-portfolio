@@ -19,10 +19,10 @@ const CREDITS = [
 ];
 
 const STATS = [
-  { value: "~20%", label: "of the daily videoviews share" },
-  { value: "+300%", label: "pageviews views vs previous experience" },
-  { value: "5%", label: "interactions click per pageview" },
-  { value: "8%", label: "CTR/pageview redirection to related news" },
+  { value: "~20%", label: "share of daily video views" },
+  { value: "+300%", label: "pageviews vs. the previous experience" },
+  { value: "5%", label: "click-through rate per pageview" },
+  { value: "8%", label: "CTR to related news per pageview" },
 ];
 
 // Carousel thumbs (card on its team-tinted blob panel) from the Figma
@@ -56,9 +56,9 @@ export default function VaiEVemCaseStudy() {
         </Mark>
       </P>
       <P>
-        Such important asset had an passive experience with an outdated language,
-        distributed in an inconsistent and disintegrated form on the website and
-        app.
+        This valuable asset offered a passive experience with an outdated
+        language, distributed in an inconsistent and disintegrated form on the
+        website and app.
       </P>
 
       <CaptionedMockup
@@ -70,16 +70,16 @@ export default function VaiEVemCaseStudy() {
       />
 
       <P>
-        Besides all this, the past Vai e Vem was developed in a phasing out
-        platform without support or evolutive backlog: the experience
-        wasn&apos;t connected to our main sportive database and to the
+        Besides all this, the past Vai e Vem was developed on a platform being
+        phased out, without support or an active backlog: the experience
+        wasn&apos;t connected to our main sports database and to the
         editor&apos;s main workflow.
       </P>
       <P>
         In this context,{" "}
         <Mark>
-          I envisioned, as an off-backlog opportunity, an imagetic and
-          interactive transfer consumption experience
+          I envisioned, as an off-backlog opportunity, a visual, interactive
+          experience for consuming transfer content
         </Mark>{" "}
         that could integrate the related content in a consistent form, optimizing
         a valued asset to the users and to the company.
@@ -90,10 +90,10 @@ export default function VaiEVemCaseStudy() {
         <figure className="-mx-6 flex items-center justify-center gap-4 rounded-none bg-[#f4f4f4] px-4 py-10 sm:-mx-10 sm:gap-6 sm:px-8 lg:mx-0 lg:rounded-[20px]">
           <div className="hidden w-[150px] flex-col justify-between gap-16 self-stretch py-6 text-right sm:flex">
             <Caption>
-              Deal&apos;s main infos: athlete bio and hero, clubs related, status
+              Deal&apos;s main info: athlete bio and photo, related clubs, status
               and estimated cost
             </Caption>
-            <Caption>Link to latest new about the deal</Caption>
+            <Caption>Link to latest news about the deal</Caption>
           </div>
           <Image
             src="/projects/vev-card.png"
@@ -116,10 +116,11 @@ export default function VaiEVemCaseStudy() {
       </div>
 
       <P>
-        The main goal for Vai e Vem was to bring the transfers information in a
-        bold, but familiar interface, consistent to the product language through
-        the teams&apos; identities. Beyond the graphic form, this new format was
-        powered with content in multiples forms, exploring our text and video
+        The main goal for Vai e Vem was to bring transfer information into a
+        bold, but familiar interface, consistent with the product&apos;s language
+        through the teams&apos; identities. Beyond the graphic form, this new
+        format was powered by content in multiple formats, exploring our text and
+        video
         assets connected to the user&apos;s feedback about the market deals and
         rumours.
       </P>
@@ -151,16 +152,15 @@ export default function VaiEVemCaseStudy() {
       <Stats items={STATS} />
 
       <p className="mt-4 text-[18px] tracking-[-0.04em] text-ink-soft">
-        You can check the experience{" "}
+        You can check the live experience on{" "}
         <a
           href="https://ge.globo.com/futebol/central-do-mercado/vai-e-vem/vai-e-vem-do-mercado-2026/"
           target="_blank"
           rel="noreferrer"
           className="text-ink underline decoration-from-font underline-offset-2 transition-opacity hover:opacity-60"
         >
-          here
+          ge.globo
         </a>
-        .
       </p>
     </ProjectLayout>
   );

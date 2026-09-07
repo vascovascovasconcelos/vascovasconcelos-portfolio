@@ -3,7 +3,7 @@ import ProjectLayout from "@/components/project/ProjectLayout";
 import { P, Mark, CaptionedMockup } from "@/components/project/prose";
 import MediaCarousel, { type MediaItem } from "@/components/MediaCarousel";
 
-const TITLE = "New experience vision for ge App";
+const TITLE = "New Product Vision for ge App";
 
 export const metadata: Metadata = {
   title: `${TITLE} — Vasco Vasconcelos`,
@@ -55,7 +55,7 @@ export default function GeCaseStudy() {
         width={650}
         height={560}
         alt="ge App's new imagetic feed"
-        caption="New imagetic feed: bringing sports' passion and language to the front"
+        caption="New visual-led feed: bringing sports' passion and language to the front"
       />
 
       <P>
@@ -71,9 +71,9 @@ export default function GeCaseStudy() {
         The digital consumption and user habits have change, so ge was facing
         some challenges:{" "}
         <Mark>
-          users expect a customized experience, traditional news formats declines
-          in indicators and new players arrived in sports category and the
-          experience turned to be a differential.
+          users expect a customized experience, traditional news formats are
+          declining in engagement indicators, and new players have entered the
+          sports category and the experience turned to be a differential.
         </Mark>
       </P>
 

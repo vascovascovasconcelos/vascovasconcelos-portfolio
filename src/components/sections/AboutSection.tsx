@@ -36,7 +36,7 @@ export default function AboutSection() {
           <a href="#" className={linkClass}>
             DALE
           </a>
-          , an all-service agency.
+          , a full-service agency.
         </p>
 
         <p className="leading-[1.4] tracking-[-0.04em] text-ink-soft text-[18px]">
@@ -47,7 +47,7 @@ export default function AboutSection() {
             rel="noreferrer"
             className={linkClass}
           >
-            linkedin
+            LinkedIn
           </a>{" "}
           or contact me by{" "}
           <a href="mailto:hello@vascovasconcelos.com" className={linkClass}>

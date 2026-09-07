@@ -37,7 +37,7 @@ const WIDE: MediaItem[] = [
 
 const STATS = [
   { value: "17", label: "companies, such as Globo, TOTVS and ArcelorMittal" },
-  { value: "+60k", label: "participants employees" },
+  { value: "+60k", label: "participating employees" },
   { value: "+1,1M", label: "registered tips" },
   { value: "44,1%", label: "on average employee's adhesion" },
 ];
@@ -55,11 +55,11 @@ export default function DaleCaseStudy() {
       <P>
         <Mark>Nothing compares to football&apos;s World Cup global impact</Mark>:
         it engages 5 billion fans and has almost 1.5 billion viewers on a single
-        match (FIFA, 2022) – for instance, Super Bowl, most successful American
-        sports event, reaches an average of 125 million viewers.
+        match (FIFA, 2022) – for instance, the Super Bowl, the most-watched
+        American sports event, reaches an average of 125 million viewers.
       </P>
       <P>
-        In Brazil, 5 times World Cup&apos;s champions and a country where
+        In Brazil, five-time World Cup champions and a country where
         football is seen as a religion, the event is omnipresent in our daily
         life: street walls and sidewalks painted, flags and adornments hanging,
         family and friends gathering to watch games and creating sweepstakes to
@@ -76,11 +76,11 @@ export default function DaleCaseStudy() {
       <P>
         In this context, DALE, an awarded and successful corporate communication
         agency, brought together the Brazilian passion for football and a
-        well-established habit to the corporate journey,{" "}
+        well-established habit to the corporate journey.{" "}
         <Mark>
-          creating an office pool platform for companies, engaging employees with
-          data security and using the event as another touchpoint for internal
-          communication.
+          We created an office pool platform for companies, engaging employees
+          around data security and using the event as another
+          internal-communication touchpoint.
         </Mark>
       </P>
       <P>
@@ -98,8 +98,8 @@ export default function DaleCaseStudy() {
       <P>
         For the design system,{" "}
         <Mark>
-          it was crucial the platform was flexible enough for different colour
-          palettes beyond the default identity
+          it was crucial that the platform was flexible enough for different
+          colour palettes beyond the default identity
         </Mark>, so the foundations were created to scale through six themes.
         Also, the experience was compliant with WCAG guidelines about colour
         contrast, screen reading and assistive controls.

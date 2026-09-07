@@ -11,8 +11,9 @@ export default function IntroSection() {
           <br />São Paulo, Brasil
         </h1>
         <p className="max-w-[481px] leading-[1.3] tracking-[-0.04em] text-ink-soft text-[clamp(18px,2.4vw,24px)]">
-          i&apos;m passionate about craft and making things. right now, i&apos;m
-          working as a staff product designer at Globo.
+          i&apos;m passionate about building products where craft and
+          systems-thinking meet. right now, i&apos;m working as a staff product
+          designer at Globo.
         </p>
       </div>
     </section>

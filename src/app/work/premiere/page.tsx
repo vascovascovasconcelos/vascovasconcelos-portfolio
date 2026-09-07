@@ -18,7 +18,7 @@ const CREDITS = [
 ];
 
 const STATS = [
-  { value: "8,8%", label: "increase on the OTT subscriptions" },
+  { value: "8.8%", label: "increase on the OTT subscriptions" },
   { value: "99%", label: "lift on monthly active users" },
   { value: "+5x", label: "increase on screenviews per session" },
   { value: "96%", label: "lift on video playtime" },
@@ -48,20 +48,18 @@ export default function PremiereCaseStudy() {
       coverAlt="Premiere — Globo's football streaming app"
     >
       <P>
-        Premiere, Globo&apos;s football subscription streaming product, had a MVP
-        app launched in September 2021 and it had some challenges:
-      </P>
-      <P>
-        an experience that reduced the product value, focused on live matches
-        pandemics and a more competitive broadcast rights scenario a behaviour
-        change in business, from pay TV operators to direct to consumers sales
+        Premiere, Globo&apos;s football subscription streaming product, had an
+        MVP app launched in September 2021 and it had some challenges: an
+        experience that reduced the product value, focused on live matches during
+        the pandemic and a more competitive broadcast rights scenario a behaviour
+        change in business, from pay TV operators to direct-to-consumer sales.
       </P>
       <P>
         The journey then was very simple, focused on live streaming, which
-        represented low consumption metrics between the matches, that impacted on
-        the product&apos;s rentability beyond subscription. Also the app had
-        accessibility gaps that impact on users and it wasn&apos;t compliant to
-        the best practices for digital products.
+        represented low consumption metrics between the matches, that affected the
+        product&apos;s profitability beyond subscription. Also the app had
+        accessibility gaps that impact on users and it wasn&apos;t compliant with
+        best practices for digital products.
       </P>
 
       <CaptionedMockup
@@ -79,7 +77,7 @@ export default function PremiereCaseStudy() {
         the match itself.
       </P>
       <P>
-        So the objectives with this iteration was to{" "}
+        So the objectives with this iteration were to{" "}
         <Mark>
           enrich content, explore our VOD assets and make Premiere go beyond the
           live moment
@@ -88,7 +86,7 @@ export default function PremiereCaseStudy() {
         centre.
       </P>
       <P>
-        For the new homescreen, the main goals was to bring customization and
+        For the new homescreen, the main goals were to bring customization and
         hierarchy to the journey, making it easier for the users to find matches,
         tournaments and previous matches videos.
       </P>
@@ -96,18 +94,18 @@ export default function PremiereCaseStudy() {
       <CardCarousel cards={HOMESCREEN} alt="Premiere homescreen" />
 
       <P>
-        At the match centre, Premiere redefined the live match experience. Then
-        the user has nothing but the streaming content; in this experience
+        At the match centre, Premiere redefined the live match experience.
+        Previously, users had nothing but the streaming content. In this new
         iteration,{" "}
         <Mark>
-          the user has more immersive information, access to replay&apos;s VOD
-          and integration with Globo&apos;s fantasy game (Cartola)
+          users have more immersive information, access to replay&apos;s VOD and
+          integration with Globo&apos;s fantasy game (Cartola)
         </Mark>
         . Also, Premiere now offered previous matches content, making the
         app&apos;s journey broader and more valuable.
       </P>
       <P>
-        In all these projects, I also build{" "}
+        In all these projects, I also built{" "}
         <Mark>an accessibility culture for the product&apos;s team</Mark>:
         reviewing colour palettes and typographic patterns by designing a
         documentation structure for engineering.
@@ -116,7 +114,7 @@ export default function PremiereCaseStudy() {
       <CardCarousel cards={MATCH_CENTRE} alt="Premiere match centre" />
 
       <P>
-        This new experience was a milestone to the following iterations at the
+        This new experience was a milestone for the following iterations in the
         product and built a strong culture for accessibility. As the results,
         Premiere had:
       </P>
@@ -124,7 +122,7 @@ export default function PremiereCaseStudy() {
       <Stats items={STATS} />
 
       <p className="text-[16px] tracking-[-0.04em] text-ink-soft">
-        *data from December, 2021, to April, 2022
+        *data from December 2021 to April 2022
       </p>
       <p className="text-[18px] tracking-[-0.04em] text-ink-soft">
         You can check Premiere&apos;s app out for{" "}

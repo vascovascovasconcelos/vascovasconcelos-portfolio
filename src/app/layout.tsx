@@ -11,7 +11,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Vasco Vasconcelos — Product Designer",
   description:
-    "i'm Vasco, a designer from São Paulo, Brasil. Passionate about craft and making things. Staff product designer at Globo.",
+    "i'm Vasco, a designer from São Paulo, Brasil. Passionate about building products where craft and systems-thinking meet. Staff product designer at Globo.",
 };
 
 export default function RootLayout({

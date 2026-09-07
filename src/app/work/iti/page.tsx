@@ -38,24 +38,24 @@ export default function ItiCaseStudy() {
       coverAlt="iti/Itaú — Pix payment journey"
     >
       <P>
-        Working, as a contractor from IBM, on Payments&apos; squad at iti,
-        Itaú&apos;s former digital bank, Pix – a new instant payment form from
-        Brazilian Central Bank – was taking place in November, 16, 2020 and it
-        need a technical rebuild and a new payment journey, which we took as an
-        opportunity to bring a new, proprietary experience and visual identity.
+        I worked as an IBM contractor on the Payments squad at iti, Itaú&apos;s
+        digital bank. Pix — the Brazilian Central Bank&apos;s new instant payment
+        method — launched on November 16, 2020, requiring a technical rebuild and
+        a new payment journey. We took this as an opportunity to build a new,
+        proprietary experience and visual identity.
       </P>
       <P>
-        The previous payment journey was content-heavy, less gestural and
-        brandless.
+        The previous payment journey was content-heavy, less gestural and lacked
+        brand identity.
       </P>
 
       <CardCarousel cards={OLD_JOURNEY} alt="iti's previous payment journey" />
 
       <P>
-        We had a{" "}
+        We built a{" "}
         <Mark>
-          more fluid and flexible payment journey, that merges the previous
-          default forms as DOC/TED and bank payment slip with the new tokens
+          more fluid, flexible payment journey that merged the previous default
+          forms as DOC/TED and bank payment slip with the new tokens
         </Mark>{" "}
         as mobile phone number, security number, e-mail and random key.
       </P>
@@ -71,18 +71,17 @@ export default function ItiCaseStudy() {
           more defined content and task groups
         </li>
         <li>
-          we remark the interface with the{" "}
+          we refreshed the interface with iti&apos;s{" "}
           <Mark>
-            new iti&apos;s proprietary visual identity (using the pink palette),
-            highlighting the iticon avatar
+            new proprietary visual identity (using the pink palette), highlighting
+            the iticon avatar
           </Mark>{" "}
           to bring a friendly touch to the journey
         </li>
         <li>
-          we added send message feature to all users,{" "}
-          <Mark>antecipating a side social feature for the transaction</Mark> –
-          before Pix feature, messages were only allowed between iti&apos;s
-          accounts
+          we added a messaging feature for all users,{" "}
+          <Mark>anticipating a social layer for transactions</Mark> — before Pix,
+          messaging was only available between iti accounts
         </li>
       </ul>
 
@@ -97,11 +96,10 @@ export default function ItiCaseStudy() {
 
       <P>
         <Mark>
-          iti was the first financial institution to rollout Pix feature the its
-          whole userbase, 5 days before it was available to the entire banking
-          system
-        </Mark>. Also, 6 months after Pix launch, the app doubled its client
-        base (from 3MM to 6MM users).
+          iti was the first financial institution to roll out Pix to its entire
+          user base, 5 days before it was available to the entire banking system
+        </Mark>. Also, 6 months after Pix launch, the app doubled its client base
+        (from 3 million to 6 million users).
       </P>
 
       <p className="text-[16px] tracking-[-0.04em] text-ink-soft">
